@@ -18,3 +18,6 @@ Run on other port:
 ```
   $ python client.py 8888
 ```
+#### shutdown: shutdown server from client
+
+#### exit: shutdown client
