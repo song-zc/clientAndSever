@@ -16,14 +16,14 @@ class RequestHandler(SimpleXMLRPCRequestHandler):
 RNADICT={'A': 329.0525, 'C': 305.0413, 'G': 345.0474, 'U': 306.0253}
 
 def main(argv):
-    if len(argv)!=1 and len(argv)!=2: #default port 9999
-        print ('server need one argument for port or use port 9999 as default')
+    if len(argv)!=1 and len(argv)!=2: #default port 19999
+        print ('server need one argument for port or use port 19999 as default')
         return
 
     if len(argv)==2:
         port=int(argv[1])
     else:
-        port=9999
+        port=19999
     
     server = MyServer(('127.0.0.1', port), \
             requestHandler=RequestHandler) 
